@@ -1,0 +1,454 @@
+*{margin: 0; padding: 0; line-height: 1;}
+ul{list-style: none;}
+a{text-decoration: none;}
+img{border: none;}
+
+
+/********** 상단 작업 완료 **********/
+
+.headerWrap{
+    height: 65px;
+    border-bottom: 1px solid #dadada;
+    box-sizing: border-box;
+/*  margin-bottom: 70px;*/
+    position: relative;
+}
+
+.headerWrap header{
+    width: 1020px;
+    height: 65px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+/*********  gnb *********/
+.headerWrap header .gnb{
+    width:600px;
+    position: absolute;
+    left: 220px;
+    bottom: 0px;
+}
+
+.headerWrap header .gnb > li{
+    float: left;
+    position: relative;
+}
+.headerWrap header .gnb > li:last-child{margin-right: 0px;}
+
+.headerWrap header .gnb > li > a{
+    color:#999;
+    font-weight: bold;
+    font-size: 17px;
+    display: block;
+    width: 120px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+}
+.headerWrap header .gnb > li > a:hover{color:#12bb2e;}
+
+
+
+.gnb > li > ul{
+    position: absolute;
+    display: none;
+    z-index: 6;
+}
+
+.gnb > li > ul li a {
+    color: #666;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    display: block;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.gnb > li > ul li a:hover { color: #12bb2e;} 
+
+.gnbBG{
+    width: 100%;
+    height:180px;
+    position: absolute;
+    background-color: #f9f9f9;
+    top:65px;
+    display: none;
+    z-index: 5;
+}
+
+
+
+
+
+.headerWrap header .logo, .search{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    display: block;
+}
+
+.headerWrap header .logo{
+    float: left;
+    width: 65px;;
+    height: 65px;
+    background-image: url(img/logo.png);
+}
+
+.headerWrap header .search{
+    width: 25px; height: 25px;
+    background-size:contain;
+    background-image: url(img/btn_search.png);
+    position: absolute; 
+    top:20px;
+    right: 10px;
+}
+
+
+/********** visual **********/
+
+.visual{
+    width: 100%;
+    height: 715px;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+}
+
+.visual .panel{
+    width: 300%;
+    height: 690px;
+    overflow: hidden;
+}
+
+.visual .panel li{
+    float: left;
+    width: 33.333%;
+    height: 100%;
+    overflow:hidden;
+}
+
+.visual .panel li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;    
+}
+
+.visual .panel li:nth-child(1) a{background-image: url(img/img_main_top_slide_list1.jpg);}
+.visual .panel li:nth-child(2) a{background-image: url(img/img_main_top_slide_list2.jpg);}
+.visual .panel li:nth-child(3) a{background-image: url(img/img_main_top_slide_list3.jpg);}
+
+.visual .navi{
+    margin: 0 auto;
+    width: 200px;
+    height: 4px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -62.666px;
+}
+.visual .navi li{
+    float:left;
+    margin-right: 10px;
+}
+.visual .navi li:last-child{margin: 0;}
+.visual .navi li a{
+    display: block;
+    width:60px;
+    height:4px;
+    background-color: lightgray;
+}
+
+.visual .navi li:hover a{ background-color:darkgreen;}
+
+.visual .prev{position:absolute; top:50%; margin-top:-35px; left: 125px;}
+.visual .next{position:absolute; top:50%; margin-top:-35px; right: 125px;}
+
+
+/********** **********/
+
+.center{
+    width: 100%;
+    height: 1640px;
+    margin-top: 143px;
+}
+
+
+.btn{
+    width: 200px;
+    height: 40px;
+    border : 2px solid #00822f;
+    color: #00822f;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto;
+    display:block;
+}
+
+.btn:hover{
+    background-color: #00822f;
+    color: #fff;
+}
+/********** center1 **********/
+.center1{    
+    width:100%;
+    height: 445px;
+}
+
+.center1 .visual2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.visual2 .panel2{
+    width: 300%;
+    height: 100%;
+}
+
+.visual2 .panel2 li{
+    float: left;
+    width: 33.333%;
+    height: 100%;
+}
+
+.visual2 .panel2 li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;    
+}
+
+.visual2 .panel2 li:nth-child(1) a{background-image: url(img/img_main_mid_slide_list1.jpg);}
+.visual2 .panel2 li:nth-child(2) a{background-image: url(img/img_main_mid_slide_list2.jpg);}
+.visual2 .panel2 li:nth-child(3) a{background-image: url(img/img_main_mid_slide_list3.jpg);}
+
+
+/********** center2 **********/
+
+.center2{ 
+    width: 100%;
+    height: 350px;
+    color: #999;
+}
+
+.center2 ul{
+    padding-top: 50px;
+    width: 870px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.center2 ul li{
+    float: left;
+    width: 270px;
+    height: 250px;
+    text-align: center;
+    position: relative;
+    margin-right: 20px;
+}
+
+.center2 ul li h4{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.center2 ul li p {
+    line-height: 1.3;
+    font-size: 15px;
+}
+
+.center2 ul li .btn {
+    position: absolute;
+    bottom: 0px;
+    left:50%;
+    margin-left: -100px;
+}
+
+.center2 ul >li:hover .btn{
+    background-color: #00822f;
+    color: #fff;
+}
+.center2 ul >li:hover h4{
+    color: #00822f;
+}
+.center2 ul >li:hover p{
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+/********** center3 **********/
+.center3{
+    width:100%;
+    height: 550px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #dadada;
+    color: #00833f;
+    text-align: center;
+    padding-top: 120px;
+    box-sizing: border-box;
+}
+.center3 h1{
+    font-size: 60px;
+    padding-top: 15px;
+}
+
+.center3 h2,h4{
+    padding-top: 30px;
+}
+.center3 h2{font-size: 35px;}
+.center3 h4{color:#333;padding-bottom: 75px;}
+
+
+
+
+
+/********** center4 **********/
+
+.center4{
+    width: 100%;
+    height: 295px;
+    background-image: url(img/bg_main_bottom.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/********* footer **********/
+
+footer{
+    width: 100%;
+    height: 240px;
+}
+
+
+footer .topWrap{
+    width: 100%;
+    height: 85px;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    background-color:#f9f9f9;
+}
+
+
+footer .top{
+    width: 1020px;
+    height: 85px;
+    margin: 0 auto;
+    padding-top: 12px;
+    position: relative;   
+}
+
+
+footer .top .left{
+    float:left;
+    height: 60px; 
+    overflow: hidden;
+    position: absolute;
+    top:25px;
+    left: 0px;
+}
+footer .top .left li{
+    float: left;
+    height: 30px;
+    width: 40px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+footer .top .left li a{
+    display: block;
+    width: 40px;
+    height: 30px;
+    line-height: 85px;
+    background-repeat: no-repeat;
+    background-position: 5px 0px;
+    text-indent: -9999px;
+    transition: all 0.3s;
+}
+footer .top .left li:hover a{
+    background-position: 5px -40px;
+}
+
+footer .top .left li:nth-child(1) a{background-image: url(img/btn_footer_lang_1.png);}
+footer .top .left li:nth-child(2) a{background-image: url(img/btn_footer_lang_2.png);}
+footer .top .left li:nth-child(3) a{background-image: url(img/btn_footer_lang_3.png);}
+footer .top .left li:nth-child(4) a{background-image: url(img/btn_footer_lang_4.png);}
+
+
+
+footer .top .right{
+    float:right;
+    width: 120px;
+    height: 60px; 
+    overflow: hidden;
+    position: absolute;
+    top:30px;
+    right: 0px;
+}
+footer .top .right li{
+    float: left;
+    height: 27px;
+    width: 35px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+footer .top .right li a{
+    display: block;
+    width: 35px;
+    height: 27px;
+    line-height: 85px;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    text-indent: -9999px;
+    transition: all 0.3s;
+}
+
+footer .top .right li:hover a{
+    background-position: center -30px;
+}
+
+
+
+footer .top .right li:nth-child(1) a{background-image: url(img/btn_link_1.png);}
+footer .top .right li:nth-child(2) a{background-image: url(img/btn_link_3.png);}
+footer .top .right li:nth-child(3) a{background-image: url(img/btn_link_4.png);}
+
+
+footer .top .fLogo{
+    display: block;
+    height: 60px;
+    width:100px;
+    margin: 0 auto;
+    background-image: url(img/logo_footer.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+/********** footer Bottom **********/
+footer .bottom{
+    padding-top: 30px;
+    box-sizing: border-box;
+    width: 1020px;
+    height: 155px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 13px;
+    color:#666;
+}
+
